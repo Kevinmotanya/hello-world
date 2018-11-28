@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="AppName">
+                <span style="color: #6092e0">Music</span>Player
+            </div>
+        </header>
+        
+        <input type=”text” id=”trackInput”>
+        <button type=”submit” id=”submitButton”name=”button”>SUBMIT</button>
+         <section id=”playAudioHere”></section>
+
+
+
+
+
+        <div class="content">
+            <div id="brand">
+                <img src="img/logo.png"/>
+            </div>
+            <div id="audio_title">
+                Track Title
+             </div>
+             <div id="timeBar">
+                 <div id="bar"></div>
+                 <div id="handle"></div>
+             </div>
+         </div>
+         <footer>
+             <div class="control">
+                 <ul>
+                     <li><button id="pre" onclick="pre()"><img src="img/back.jpg"</button></li>
+                     <li><button id="play" onclick="playOrPauseSong()"><img src="img/play.jpg"</button></li>
+                     <li><button id="next" onclick="next()"><img src="img/next.png"</button></li>
+                </ul>
+             </div>
+         </footer>
+         <script src="javascript.js"></script>
+    </body>
+</html>
